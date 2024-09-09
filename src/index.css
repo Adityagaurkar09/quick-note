@@ -3,6 +3,9 @@ body{
     padding: 20px 50px;
     background-color: rgb(247, 239, 229);
 }
+.heading{
+    font-size: 50px;
+}
 .text-center{
     text-align: center;
 }
@@ -15,10 +18,16 @@ body{
 .text-heilight{
     background-color: rgb(226, 191, 217);
 }
+.bold-text{
+    font-weight: 600;
+}
+.purple-color{
+    background-color: rgb(101, 77, 161);
+    color: white;
+}
 .btn-primary{
-    background-color: rgb(226, 191, 217);
     margin: 20px 50px;
-    padding: 5px 15px;
+    padding: 10px 10px;
     border-radius: 5px;
     font-size: 20px;
     border: none;
