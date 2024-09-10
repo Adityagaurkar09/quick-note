@@ -4,6 +4,7 @@ import imgSecure from "./secure.png"
 import imgBrain from "./brain.png"
 import heartImg from "./heart.png"
 import FatureCard from '../../component/FeatureCard/FatureCard'
+import { Link } from 'react-router-dom'
 
 const FEATURE = [
   {
@@ -53,8 +54,12 @@ function Home() {
 
  </div>
  <div className='button-container text-center'>
+  <Link to="/add">
   <button  className='btn-primary purple-color  bold-text'>ADD NOTE</button>
+  </Link>
+  <Link to="/show">
   <button  className='btn-primary text-heilight bold-text '>SHOW NOTE</button>
+  </Link>
  </div>
  </div>
   )

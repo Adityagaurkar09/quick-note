@@ -32,3 +32,16 @@ body{
     font-size: 20px;
     border: none;
 }
+@media screen and (max-width: 500px) {
+    .button-container{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        background-color: white;
+        width: 100%;
+    }
+    body{
+        margin: 5px 10px;
+    }
+    }

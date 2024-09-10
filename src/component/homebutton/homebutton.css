@@ -1,0 +1,17 @@
+.home-img{
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    top: 40px;
+    left: 40px;
+}
+@media screen and (max-width: 500px) {
+    .home-img{
+        height: 50px;
+        width: 50px;
+        position: fixed;
+        top: 90vh;
+        left: 85vw;
+       
+    }
+    }
