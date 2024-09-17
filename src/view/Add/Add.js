@@ -56,7 +56,7 @@ function Add() {
 <select value={category} className='input-btn option-btn' onChange={(e)=> setCategory(e.target.value)}>
       <option value="">select category</option>
       <option value="work">Work</option>
-      <option value="personal work">Personal Work</option>
+      <option value="health">health</option>
       <option value="playing">Playing</option>
       <option value="learning">Learning</option>
       <option value="shoping">Shoping</option>
@@ -77,7 +77,7 @@ className='emoji-picker'
 {emoji ? emoji : "select Emoji"}
 
 </div>
-    {title}
+    
 
     <button type="button" 
     className='btn-primary text-heilight addd-btn'

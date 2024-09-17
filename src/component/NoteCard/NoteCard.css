@@ -1,0 +1,75 @@
+.note-container{
+  height: 100px;
+  background-color: white;
+  margin: 10px 20px;
+  padding: 5px 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.emoji{
+    font-size: 50px;
+    margin-right: 40px;
+}
+.title{
+    font-size: 30px;
+}
+.description{
+    display: flex;
+    font-size: 20px;
+}
+.category{
+position: absolute;
+top: 10px;
+right: 10px;
+padding: 5px 10px;
+background-color: aliceblue;
+border-radius: 10px;
+text-align: center;
+align-items: center;
+font-size: 18px;
+}
+.emojicategory{
+    font-size: 15px;
+}
+.bg-work{
+    background-color: aquamarine;
+}
+.bg-shoping{
+    background-color: aqua;
+}
+.bg-health{
+    background-color: bisque;
+}
+.bg-learning{
+    background-color: red;
+}
+.bg-playing{
+    background-color: blue;
+}
+
+@media screen and (max-width: 500px) {
+    .emoji{
+        font-size: 50px;
+        margin-right: 0;
+    }
+    .note-container{
+        margin: 10px;
+        padding: 0px;
+    }
+    .title{
+        font-size: 25px;
+    }
+    .description{
+        font-size: 15px;
+    }
+    .category{
+        font-size: 14px;
+       
+    }
+    .emojicategory{
+        font-size: 13px;
+    }
+}
