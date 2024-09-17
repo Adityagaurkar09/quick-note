@@ -35,19 +35,25 @@ font-size: 18px;
     font-size: 15px;
 }
 .bg-work{
-    background-color: aquamarine;
+    background-color: rgba(250, 155, 23, 0.916);
 }
 .bg-shoping{
-    background-color: aqua;
+    background-color: rgba(0, 255, 255, 0.653);
 }
 .bg-health{
-    background-color: bisque;
+    background-color: rgb(77, 201, 77);
 }
 .bg-learning{
-    background-color: red;
+    background-color: rgb(127, 127, 235);
 }
 .bg-playing{
-    background-color: blue;
+    background-color: rgb(244, 74, 74);
+}
+.delet{
+    height: 25px;
+    position: absolute;
+    bottom: 15px;
+    right: 40px;
 }
 
 @media screen and (max-width: 500px) {

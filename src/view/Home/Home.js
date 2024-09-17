@@ -24,7 +24,7 @@ const FEATURE = [
 function Home() {
   return (
     <div>
- <h1 className='text-center text-primary heading'>Quick-Note</h1>
+ <h1 className='text-center text-primary heading'> 📘 Quick-Note</h1>
  
 <h2>
  <p className='text-center text-secondary'>Your Pcket Friendly Toking App.

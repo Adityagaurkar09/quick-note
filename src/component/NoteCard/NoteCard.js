@@ -1,11 +1,21 @@
 import React from 'react'
 import "./NoteCard.css"
+import imgDelet from "./delete.png"
+
 
 function titleCase (str) {
 return(
   str[0].toUpperCase() + str.slice(1)
 )
 }
+
+function deletNote (index){
+  const savedNote = JSON.parse(localStorage.getItem("notes")) || [];
+  savedNote.splice(index, 1);
+  localStorage.setItem("notes",JSON.stringify(savedNote));
+  window.location.reload ();
+}
+
 
 function NoteCategory ({category}){
 
@@ -26,7 +36,7 @@ function NoteCategory ({category}){
   )
 }
 
-function NoteCard({title,description,category,emoji}) {
+function NoteCard({index,title,description,category,emoji}) {
   return (
     <div className='note-container '>
   <div className='emoji'>{emoji}</div>
@@ -35,6 +45,13 @@ function NoteCard({title,description,category,emoji}) {
     <p className='description'>{description}</p>
 
     <NoteCategory category={category} />
+   <img src={imgDelet} 
+   className='delet'
+    alt='delet'
+    onClick={()=>{
+      deletNote(index);
+    }}
+   />
   </div>
     </div>
   );

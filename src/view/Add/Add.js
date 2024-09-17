@@ -35,7 +35,7 @@ function Add() {
 
   return (
     <div>
-    <h1 className='text-center text-primary'>Add Note</h1>
+    <h1 className='text-center text-primary'>✍️ Add Note</h1>
 
     <input className='input-btn'
      type='text'

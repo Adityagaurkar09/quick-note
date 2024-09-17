@@ -11,15 +11,15 @@ function Show() {
   },[]);
   return (
     <div>
-    <h1 className='text-center text-primary'>Show Note</h1>
+    <h1 className='text-center font-show text-primary'> 📖 Show Note</h1>
 
     <div className='notes-container'>
     {
-      notes.map((note)=>{
+      notes.map((note,index)=>{
         const {title,description,category,emoji} = note;
 
         return(
-          <NoteCard title={title} description={description} category={category} emoji={emoji}/>
+          <NoteCard index={index} title={title} description={description} category={category} emoji={emoji}/>
         )
       })
     }
