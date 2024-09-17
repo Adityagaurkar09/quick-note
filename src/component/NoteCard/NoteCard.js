@@ -20,6 +20,7 @@ function deletNote (index){
 function NoteCategory ({category}){
 
   const CATEGORY_EMOJI = {
+    
     "work":"🧑‍💻",
     "shoping":"🛍️",
     "health":"🏋️",

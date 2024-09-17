@@ -3,7 +3,7 @@
     width: 50px;
     position: fixed;
     top: 40px;
-    left: 40px;
+    left: 20px;
 }
 @media screen and (max-width: 500px) {
     .home-img{
