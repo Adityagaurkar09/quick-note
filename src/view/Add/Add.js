@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import './Add.css'
 import Homebutton from '../../component/homebutton/homebutton'
 import EmojiPicker from 'emoji-picker-react';
+import { json } from 'react-router-dom';
+import toast from 'react-hot-toast';
 
 function Add() {
   const [title , setTitle] = useState("");
@@ -9,6 +11,28 @@ function Add() {
   const [category , setCategory] = useState("");
   const [emoji , setEmoji] = useState("");
   const [openEmojiDialoge , setOpenEmojiDialoge] = useState(false)
+
+  const addNote = ()=>{
+    const notes = JSON.parse(localStorage.getItem("notes")) || [];
+
+    const noteObject = {
+      title,
+      description,
+      category,
+      emoji
+    };
+    notes.push(noteObject);
+    localStorage.setItem("notes",JSON.stringify(notes))
+
+    toast.success ("Note Added Succesfully")
+
+    setTitle("");
+    setDescription("");
+      setCategory("");
+      setEmoji("")
+    
+  };  
+
   return (
     <div>
     <h1 className='text-center text-primary'>Add Note</h1>
@@ -30,6 +54,7 @@ function Add() {
      }}/>
 
 <select value={category} className='input-btn option-btn' onChange={(e)=> setCategory(e.target.value)}>
+      <option value="">select category</option>
       <option value="work">Work</option>
       <option value="personal work">Personal Work</option>
       <option value="playing">Playing</option>
@@ -54,17 +79,10 @@ className='emoji-picker'
 </div>
     {title}
 
-    <button type="button" className='btn-primary text-heilight addd-btn'
-     onClick={()=>{
-      console.log("title",title)
-      console.log("description",description)
-      console.log("category",category)
-      console.log("emoji",emoji)
-    }}>
+    <button type="button" 
+    className='btn-primary text-heilight addd-btn'
+     onClick={addNote}>
       + ADD NOTE</button>
-
-
-
 
 <Homebutton/>
     </div>
