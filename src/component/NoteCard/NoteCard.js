@@ -6,8 +6,7 @@ import imgDelet from "./delete.png"
 function titleCase (str) {
 return(
   str[0].toUpperCase() + str.slice(1)
-)
-}
+)}
 
 function deletNote (index){
   const savedNote = JSON.parse(localStorage.getItem("notes")) || [];

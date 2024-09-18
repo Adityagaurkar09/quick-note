@@ -55,6 +55,10 @@ font-size: 18px;
     bottom: 15px;
     right: 40px;
 }
+.delet:hover{
+    height: 30px;
+    transition: 1s ease-in-out;
+}
 
 @media screen and (max-width: 500px) {
     .emoji{
