@@ -59,10 +59,9 @@ font-size: 18px;
     height: 30px;
     transition: 1s ease-in-out;
 }
-
 @media screen and (max-width: 500px) {
     .emoji{
-        font-size: 50px;
+        font-size: 40px;
         margin-right: 0;
     }
     .note-container{
@@ -70,16 +69,19 @@ font-size: 18px;
         padding: 0px;
     }
     .title{
-        font-size: 25px;
+        font-size: 20px;
     }
     .description{
         font-size: 15px;
     }
     .category{
-        font-size: 14px;
-       
+        display: none;
+        font-size: 14px;  
     }
-    .emojicategory{
-        font-size: 13px;
+    .delet {
+        height: 18px;
+        position: relative;
+        bottom: 16px;
+        left: 136px;
     }
 }
